@@ -3,7 +3,22 @@ import { Jumbotron as Jumbo, Container, Row, Col, Form } from 'react-bootstrap';
 import thirdLayer from './assets/thirdLayer.png';
 import forthLayer from './assets/forthLayer.png';
 import extraLayer from './assets/extraLayer.png';
+import Card from './components/Card';
+import logo from './assets/logo.png';
 import Button from '@bit/nexxtway.react-rainbow.button';
+import styled from 'styled-components';
+
+const Cardsdiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  & > * {
+    margin: 20px;
+    flex: 1 1 auto;
+  }
+`;
 
 export default class MainPage extends Component {
   render() {
@@ -12,10 +27,25 @@ export default class MainPage extends Component {
         <Jumbo style={{
           background: `url(${thirdLayer})`,
           backgroundSize: "100% 100%",
-          height: "750px",
-          backgroundRepeat: "no-repeat"
+          height: "950px",
+          backgroundRepeat: "no-repeat",
+          overflow: "hidden",
         }}>
-          <h2 style={{ textAlign: "Center"}}>Trusted by the industry</h2>
+          <h2 style={{ textAlign: "Center" }}>Trusted by the industry</h2>
+          <Cardsdiv>
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+            <Card image={logo} title='Card' text='Default card style' />
+          </Cardsdiv>
         </Jumbo>
         {/* ################## */}
         <Jumbo style={{

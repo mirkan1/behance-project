@@ -11,7 +11,7 @@ import firstLayer from './assets/fistLayer.png';
 import fifthLayer from './assets/fifthLayer.png';
 import logo from './assets/logo.png';
 
-class App extends Component {   
+class App extends Component {  
   render() {
   return (
     <>
@@ -21,7 +21,7 @@ class App extends Component {
         height: "750px",
         backgroundRepeat: "no-repeat",
       }}>
-        <NavigationBar/>
+        <NavigationBar />
         <Container>
           <div className="overlay" style={{ marginTop: "250px", color: "white"}}>
             <Row>
